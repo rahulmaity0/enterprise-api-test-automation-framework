@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.enterprise.automation.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.enterprise.automation.tests.users"/>
+            <package name="com.enterprise.automation.tests.payments"/>
+        </packages>
+    </test>
+
+</suite>
